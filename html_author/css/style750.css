@@ -1,0 +1,106 @@
+@media only screen and (max-width: 1023px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  .open_menu {
+    float: right;
+    display: block;
+    height: 30px;
+    width: 40px;
+    border-top: 3px solid #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+    margin-top: 35px;
+    position: relative;
+  }
+  .open_menu::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #49cbcd;
+  }
+  #header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    overflow: auto;
+    padding: 30px 0px;
+    opacity: 0;
+    top: -100%;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  #header nav.active {
+    top: 0;
+    opacity: 1;
+  }
+  .menu {
+    float: none;
+    margin: 0;
+  }
+  .menu li {
+    display: block;
+    padding: 0;
+  }
+  .menu a {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.9;
+    height: auto;
+    padding: 10px;
+  }
+  .clouse_menu {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #49cbcd;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto 20px;
+  }
+  .clouse_menu::before {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 26px;
+    background: #49cbcd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -13px;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    position: absolute;
+  }
+  .clouse_menu::after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 26px;
+    background: #49cbcd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -13px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    position: absolute;
+  }
+  .list_team li {
+    width: 50%;
+  }
+  .Slider .slick-arrow {
+    display: none !important;
+  }
+}
